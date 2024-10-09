@@ -67,6 +67,8 @@
         args="stretch_joint_state_controller stretch_diff_drive_controller stretch_arm_controller stretch_head_controller stretch_gripper_controller stretch_dex_wrist_controller"
   if="$(arg dex_wrist)"/>
 
+  <include file="$(find stretch_gazebo)/launch/gazebo_adapter.launch" pass_all_args="true"/>
+
   <node name="publish_ground_truth_odom" pkg="stretch_gazebo" type="publish_ground_truth_odom.py" output="screen"/>
 
   <!-- UPRIGHT ROTATED CAMERA VIEW -->

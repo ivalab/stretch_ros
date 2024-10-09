@@ -1,0 +1,4 @@
+<launch>
+  <!-- Adapter to push commands meant for a physical robot to the gazebo sim -->
+  <node name="stretch_gazebo_adapter" pkg="stretch_gazebo" type="stretch_gazebo_adapter.py" output="screen" launch-prefix="$(env PYTHON_BIN)"/>
+</launch>
