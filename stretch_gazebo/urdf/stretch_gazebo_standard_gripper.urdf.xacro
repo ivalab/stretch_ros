@@ -21,6 +21,24 @@
       <material>Gazebo/Gray</material>
   </gazebo>
 
+  <gazebo>
+     <plugin name="gazebo_grasp_fix" filename="libgazebo_grasp_fix.so">
+          <arm>
+             <arm_name>stretch_robot</arm_name>
+             <palm_link> link_wrist_yaw  </palm_link>
+             <gripper_link> link_gripper_finger_left </gripper_link>
+             <gripper_link> link_gripper_finger_right </gripper_link>
+          </arm>
+         <forces_angle_tolerance>100</forces_angle_tolerance>
+         <update_rate>4</update_rate>
+         <grip_count_threshold>4</grip_count_threshold>
+         <max_grip_count>8</max_grip_count>
+         <release_tolerance>0.005</release_tolerance>
+         <disable_collisions_on_attach>true</disable_collisions_on_attach>
+         <contact_topic>__default_topic__</contact_topic>
+      </plugin>
+  </gazebo>
+
   <gazebo reference="link_right_wheel">
       <mu1 value="100.0"/>
       <mu2 value="200.0"/>

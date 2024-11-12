@@ -5,7 +5,6 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /Odometry1/Shape1
-        - /Path to Goal1
       Splitter Ratio: 0.6117647290229797
     Tree Height: 539
   - Class: rviz/Selection
@@ -387,7 +386,7 @@ Visualization Manager:
       Draw Behind: true
       Enabled: true
       Name: Global Costmap
-      Topic: /move_base/global_costmap/costmap
+      Topic: /move_base_gpf/global_costmap/costmap
       Unreliable: false
       Use Timestamp: false
       Value: true
@@ -397,7 +396,7 @@ Visualization Manager:
       Draw Behind: true
       Enabled: true
       Name: Local Costmap
-      Topic: /move_base/local_costmap/costmap
+      Topic: /move_base_gpf/local_costmap/costmap
       Unreliable: false
       Use Timestamp: false
       Value: true
@@ -447,7 +446,7 @@ Visualization Manager:
       Radius: 0.009999999776482582
       Shaft Diameter: 0.03999999910593033
       Shaft Length: 0.10000000149011612
-      Topic: /move_base/TrajectoryPlannerROS/global_plan
+      Topic: /move_base_gpf/GlobalPlanner/plan
       Unreliable: false
       Value: true
     - Class: octomap_rviz_plugin/OccupancyGrid
